@@ -466,6 +466,7 @@ public class DynmapCore implements DynmapCommonAPI {
         // Inject core instance
         ImageIOManager.core = this;
         // Check for webp support
+	/*
     	cwebpPath = configuration.getString("cwebpPath", null);
     	dwebpPath = configuration.getString("dwebpPath", null);
     	if (cwebpPath == null) {
@@ -493,6 +494,7 @@ public class DynmapCore implements DynmapCommonAPI {
         	Log.warning("cwebp or dwebp not found, or cwebpPath or dwebpPath is invalid: webp format disabled");        	
         	cwebpPath = dwebpPath = null;
         }
+	*/
         /* Get default image format */
         def_image_format = configuration.getString("image-format", "png");
         MapType.ImageFormat fmt = MapType.ImageFormat.fromID(def_image_format);
